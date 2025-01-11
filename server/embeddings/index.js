@@ -4,7 +4,7 @@ export const embeddings = new GoogleGenerativeAIEmbeddings({
   model: "text-embedding-004", // 768 dimensions
   taskType: 'RETRIEVAL_DOCUMENT',
   title: "Document title",
-  apiKey:'',
+  apiKey: process.env.GOOGLE_API_KEY,
 });
 
 export const embedQuery = async (query) => {

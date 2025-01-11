@@ -4,7 +4,7 @@ const llm = new ChatGoogleGenerativeAI({
   model: "gemini-1.5-pro",
   temperature: 0,
   maxRetries: 2,
-  apiKey: "AIzaSyBhMigDApxkeXdQ2Z8paz57hbv1M8MCSWI",
+  apiKey: process.env.GOOGLE_API_KEY
 });
 
 
